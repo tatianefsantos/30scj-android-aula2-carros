@@ -33,7 +33,7 @@ class ListaCarrosFragment : Fragment() {
 
     fun carregarDados() {
         val api = RetrofitClient
-                .getInstance("https://carroapiscjtati.herokuapp.com/")
+                .getInstance()
                 .create(CarroAPI::class.java)
 
         loading.visibility = View.VISIBLE
